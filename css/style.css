@@ -1,0 +1,146 @@
+:root {
+    --primary-clr: #421566;
+    --accent-clr: #5f1e91;
+    --extra-dark-clr: #080808;
+    --dark-clr: #292929;
+    --light-clr: #757575;
+    --extra-light-clr: #e6e6e6;
+    --para-clr: #292929;
+    --border-clr: #f2f2f2;
+    --white-clr: #ffffff;
+}
+
+/* font-family: 'Aboreto', cursive;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Unbounded', cursive; */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+.inner-width {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.btn-primary {
+    color: var(--white-clr);
+    background-color: var(--accent-clr);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+/* logo */
+.t-logo img {
+    max-width: 50px;
+}
+
+/* top-menu */
+.top-menu-container {
+    border-bottom: 1px solid var(--border-clr);
+}
+.top-menu {
+    min-height: 60px;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+}
+.top-menu .t-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.m-items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.m-items li {
+    float: left;
+}
+
+.m-items li a {
+    font-size: 1rem;
+    display: block;
+    color: var(--extra-dark-clr);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* font-family: "Aboreto", cursive; */
+    font-weight: 400;
+    font-family: "Source Serif Pro", serif;
+    /* font-family: "Unbounded", cursive; */
+}
+
+li a:hover {
+    /* background-color: #111; */
+}
+
+/* hero */
+.hero {
+    background-color: #fef7e0;
+}
+
+.hero .content {
+    /* font-size: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.hero .content h1 {
+    font-family: "Unbounded", cursive;
+    font-weight: 800;
+}
+
+.hero .content h3 {
+    font-family: "Aboreto", cursive;
+}
